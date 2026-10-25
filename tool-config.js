@@ -1,0 +1,34 @@
+export const tool = {
+  "id": "E044",
+  "title": "파장으로 광자 에너지 계산기",
+  "inputs_text": "진공 파장 λ₀ [m]",
+  "formula": "E = h c₀ / λ₀",
+  "output_text": "광자 1개의 에너지 E [J]",
+  "assumptions": "λ₀>0. 매질 안의 파장을 진공 파장처럼 넣지 않는다. eV 선택은 동일 에너지의 단위 표시만 바꾸며 광출력·광자 유량은 추가 계산하지 않는다.",
+  "purpose": "파장 광자 에너지 계산 / LED·레이저 분광 기초",
+  "sources": [
+    {
+      "label": "OpenStax · Photoelectric Effect",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect"
+    }
+  ],
+  "slug": "eng-photon-energy",
+  "category": "광학",
+  "result_label": "광자 1개의 에너지 E",
+  "result_dimension": "energy",
+  "fields": [
+    {
+      "key": "lambda",
+      "label": "진공 파장 λ₀",
+      "dimension": "length",
+      "example": 5e-07,
+      "constraint": "positive",
+      "display_unit": "nm",
+      "display_value": "500"
+    }
+  ],
+  "site": "https://nanalab.kr/eng-photon-energy/",
+  "repository": "https://github.com/NaNaCompany/eng-photon-energy",
+  "condition": "",
+  "output_unit": "eV"
+};
